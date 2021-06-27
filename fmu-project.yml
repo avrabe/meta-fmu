@@ -9,7 +9,8 @@ header:
 # The machine as it is written into the `local.conf` of bitbake.
 machine: qemux86-64
 # The distro name as it is written into the `local.conf` of bitbake.
-distro: poky
+distro: container
+target: fmu_rs-container-image
 repos:
   # This entry includes the repository where the config file is located
   # to the bblayers.conf:
@@ -31,3 +32,6 @@ repos:
     refspec: hardknott
     layers:
       meta-oe:
+local_conf_header:
+  meta-custom: |
+    IMAGE_FSTYPES = "container"
