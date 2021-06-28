@@ -10,7 +10,7 @@ NO_RECOMMENDATIONS = "1"
 IMAGE_INSTALL = " \
  base-files \
  base-passwd \
- fmu_rs \
+ fmu-rs \
 "
 # Workaround /var/volatile for now
 ROOTFS_POSTPROCESS_COMMAND += "rootfs_fixup_var_volatile ; "
