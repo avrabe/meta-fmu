@@ -260,5 +260,5 @@ LICENSE = "CLOSED"
 # includes this file if it exists but does not fail
 # this is useful for anything you may want to override from
 # what cargo-bitbake generates.
-include fmu_rs-${PV}.inc
-include fmu_rs.inc
+include fmu-rs-${PV}.inc
+include fmu-rs.inc
