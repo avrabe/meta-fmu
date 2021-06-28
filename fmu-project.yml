@@ -10,7 +10,7 @@ header:
 machine: qemux86-64
 # The distro name as it is written into the `local.conf` of bitbake.
 distro: container
-target: fmu_image
+target: fmu-image
 repos:
   # This entry includes the repository where the config file is located
   # to the bblayers.conf:
