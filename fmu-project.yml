@@ -35,3 +35,4 @@ repos:
 local_conf_header:
   meta-custom: |
     IMAGE_FSTYPES = "container"
+    INHERIT += "rm_work_and_downloads"
