@@ -33,6 +33,13 @@ jobs:
           sudo pip3 install kas
           sudo apt-get install -y gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat libsdl1.2-dev xterm
       # Runs a set of commands using the runners shell
+      - name: Cache sstate
+        id: cache-sstate
+        uses: actions/cache@v2
+        with:
+         path: build/sstate-cache
+         key: ${{ runner.os }}-sstate
+        
       - name: Run the build
         run: |
           kas build fmu-project.yml
