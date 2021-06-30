@@ -53,5 +53,5 @@ jobs:
       - name: Archive the container
         uses: actions/upload-artifact@v1
         with:
-          name: container
-          path: build/tmp/deploy/**/*.tar
+         name: container
+         path: build/tmp/deploy/images/**/*fmu*
