@@ -33,15 +33,25 @@ jobs:
           sudo pip3 install kas
           sudo apt-get install -y gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat libsdl1.2-dev xterm
       # Runs a set of commands using the runners shell
+      - name: Get Date
+        id: get-date
+        run: |
+          echo "::set-output name=date::$(/bin/date -u "+%Y%m%d")"
+        shell: bash
       - name: Cache sstate
         id: cache-sstate
         uses: actions/cache@v2
         with:
          path: build/sstate-cache
-         key: ${{ runner.os }}-sstate-${{ hashFiles('build/sstate-cache/key') }}
+         key: ${{ runner.os }}-sstate-${{ steps.get-date.outputs.date }}
          restore-keys: ${{ runner.os }}-sstate-
         
       - name: Run the build
         run: |
           kas build fmu-project.yml
-          date > build/sstate-cache/key
+          
+      - name: Archive the container
+        uses: actions/upload-artifact@v1
+        with:
+          name: container
+          path: build/tmp/deploy/**/*.tar
