@@ -38,8 +38,10 @@ jobs:
         uses: actions/cache@v2
         with:
          path: build/sstate-cache
-         key: ${{ runner.os }}-sstate
+         key: ${{ runner.os }}-sstate-${{ hashFiles('build/sstate-cache/key') }}
+         restore-keys: ${{ runner.os }}-sstate-
         
       - name: Run the build
         run: |
           kas build fmu-project.yml
+          date > build/sstate-cache/key
