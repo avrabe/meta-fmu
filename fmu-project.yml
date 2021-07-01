@@ -23,7 +23,6 @@ repos:
     layers:
       meta:
       meta-poky:
-      meta-yocto-bsp:
   meta-rust:
     url: "https://github.com/meta-rust/meta-rust.git"
     refspec: master
