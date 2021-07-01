@@ -49,10 +49,9 @@ jobs:
       - name: Run the build
         run: |
           kas build fmu-project.yml
-          find . -type f
           
-      #- name: Archive the container
-      #  uses: actions/upload-artifact@v1
-      #  with:
-      #   name: container
-      #   path: build/**/images/**/*fmu*
+      - name: Archive the container
+        uses: actions/upload-artifact@v1
+        with:
+         name: container
+         path: build/tmp/deploy/images/qemux86-64/
