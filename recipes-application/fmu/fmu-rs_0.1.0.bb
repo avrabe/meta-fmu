@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.1.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "2e3d6b9879700f910f26eb38525aee4613867a74"
+SRCREV = "575acc85ad1712f84caf7750bbacc5e14b587190"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV_append = ".AUTOINC+2e3d6b9879"
+PV_append = ".AUTOINC+575acc85ad"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -260,5 +260,5 @@ LICENSE = "CLOSED"
 # includes this file if it exists but does not fail
 # this is useful for anything you may want to override from
 # what cargo-bitbake generates.
-include fmu-rs-${PV}.inc
-include fmu-rs.inc
+include fmu_rs-${PV}.inc
+include fmu_rs.inc
