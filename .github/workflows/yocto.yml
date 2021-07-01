@@ -54,4 +54,4 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
          name: container
-         path: build/tmp/deploy/images/**/*fmu*
+         path: build/**/images/**/*fmu*
