@@ -24,7 +24,7 @@ repos:
       meta:
       meta-poky:
   meta-rust:
-    url: "https://github.com/meta-rust/meta-rust.git"
+    url: "https://github.com/avrabe/meta-rust.git"
     refspec: master
   meta-openembedded:
     url: "https://github.com/openembedded/meta-openembedded.git"
