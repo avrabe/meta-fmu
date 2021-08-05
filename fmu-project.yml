@@ -28,7 +28,7 @@ repos:
     refspec: master
   meta-openembedded:
     url: "https://github.com/openembedded/meta-openembedded.git"
-    refspec: master
+    refspec: hardknott 
     layers:
       meta-oe:
 local_conf_header:
