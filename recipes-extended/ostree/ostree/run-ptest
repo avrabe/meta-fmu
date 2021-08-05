@@ -1,0 +1,4 @@
+#! /bin/sh
+
+gnome-desktop-testing-runner libostree
+
