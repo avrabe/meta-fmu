@@ -25,12 +25,14 @@ repos:
       meta-poky:
   meta-rust:
     url: "https://github.com/avrabe/meta-rust.git"
-    refspec: master
+    refspec: rust_1.54.0 
   meta-openembedded:
     url: "https://github.com/openembedded/meta-openembedded.git"
     refspec: hardknott 
     layers:
       meta-oe:
+      meta-python:
+      meta-networking:
 local_conf_header:
   meta-custom: |
     IMAGE_FSTYPES = "container"
