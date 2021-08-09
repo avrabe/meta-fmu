@@ -7,7 +7,7 @@ header:
   # is increased on every format change.
   version: 8
 # The machine as it is written into the `local.conf` of bitbake.
-machine: qemux86-64
+machine: qemuarm64
 # The distro name as it is written into the `local.conf` of bitbake.
 distro: container
 target: fmu-image
@@ -24,8 +24,8 @@ repos:
       meta:
       meta-poky:
   meta-rust:
-    url: "https://github.com/avrabe/meta-rust.git"
-    refspec: rust_1.54.0 
+    url: "https://github.com/meta-rust/meta-rust.git"
+    refspec: master 
   meta-openembedded:
     url: "https://github.com/openembedded/meta-openembedded.git"
     refspec: hardknott 
