@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.1.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "c3728305d6834a063a35cace07e5ccb2b71f9790"
+SRCREV = "2054f32863aa5506120d1f939b545ed158ce8e1c"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV_append = ".AUTOINC+c3728305d6"
+PV_append = ".AUTOINC+2054f32863"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -28,7 +28,7 @@ SRC_URI += " \
     crate://crates.io/bumpalo/3.7.0 \
     crate://crates.io/bytes/1.0.1 \
     crate://crates.io/cc/1.0.69 \
-    crate://crates.io/cfg-expr/0.8.0 \
+    crate://crates.io/cfg-expr/0.8.1 \
     crate://crates.io/cfg-if/0.1.10 \
     crate://crates.io/cfg-if/1.0.0 \
     crate://crates.io/chrono/0.4.19 \
@@ -69,7 +69,7 @@ SRC_URI += " \
     crate://crates.io/heck/0.3.3 \
     crate://crates.io/hermit-abi/0.1.19 \
     crate://crates.io/hex/0.4.3 \
-    crate://crates.io/http-body/0.4.2 \
+    crate://crates.io/http-body/0.4.3 \
     crate://crates.io/http/0.2.4 \
     crate://crates.io/httparse/1.4.1 \
     crate://crates.io/httpdate/1.0.1 \
@@ -81,7 +81,7 @@ SRC_URI += " \
     crate://crates.io/ipnet/2.3.1 \
     crate://crates.io/itertools/0.10.1 \
     crate://crates.io/itoa/0.4.7 \
-    crate://crates.io/js-sys/0.3.51 \
+    crate://crates.io/js-sys/0.3.52 \
     crate://crates.io/lazy_static/1.4.0 \
     crate://crates.io/libc/0.2.98 \
     crate://crates.io/lock_api/0.4.4 \
@@ -108,8 +108,8 @@ SRC_URI += " \
     crate://crates.io/openssl/0.10.35 \
     crate://crates.io/ordered-multimap/0.3.1 \
     crate://crates.io/os_str_bytes/2.4.0 \
-    crate://crates.io/ostree-sys/0.8.0 \
-    crate://crates.io/ostree/0.12.0 \
+    crate://crates.io/ostree-sys/0.8.2 \
+    crate://crates.io/ostree/0.12.2 \
     crate://crates.io/parking_lot/0.11.1 \
     crate://crates.io/parking_lot_core/0.8.3 \
     crate://crates.io/percent-encoding/2.1.0 \
@@ -129,7 +129,7 @@ SRC_URI += " \
     crate://crates.io/rand_chacha/0.3.1 \
     crate://crates.io/rand_core/0.6.3 \
     crate://crates.io/rand_hc/0.3.1 \
-    crate://crates.io/redox_syscall/0.2.9 \
+    crate://crates.io/redox_syscall/0.2.10 \
     crate://crates.io/regex-automata/0.1.10 \
     crate://crates.io/regex-syntax/0.6.25 \
     crate://crates.io/regex/1.5.4 \
@@ -143,15 +143,15 @@ SRC_URI += " \
     crate://crates.io/scopeguard/1.1.0 \
     crate://crates.io/security-framework-sys/2.3.0 \
     crate://crates.io/security-framework/2.3.1 \
-    crate://crates.io/serde/1.0.126 \
-    crate://crates.io/serde_derive/1.0.126 \
+    crate://crates.io/serde/1.0.127 \
+    crate://crates.io/serde_derive/1.0.127 \
     crate://crates.io/serde_json/1.0.66 \
     crate://crates.io/serde_urlencoded/0.7.0 \
     crate://crates.io/sha-1/0.9.7 \
     crate://crates.io/sha2/0.9.5 \
-    crate://crates.io/sharded-slab/0.1.1 \
+    crate://crates.io/sharded-slab/0.1.3 \
     crate://crates.io/signal-hook-registry/1.4.0 \
-    crate://crates.io/slab/0.4.3 \
+    crate://crates.io/slab/0.4.4 \
     crate://crates.io/smallvec/1.6.1 \
     crate://crates.io/socket2/0.4.1 \
     crate://crates.io/strsim/0.10.0 \
@@ -193,13 +193,13 @@ SRC_URI += " \
     crate://crates.io/version_check/0.9.3 \
     crate://crates.io/want/0.3.0 \
     crate://crates.io/wasi/0.10.2+wasi-snapshot-preview1 \
-    crate://crates.io/wasm-bindgen-backend/0.2.74 \
-    crate://crates.io/wasm-bindgen-futures/0.4.24 \
-    crate://crates.io/wasm-bindgen-macro-support/0.2.74 \
-    crate://crates.io/wasm-bindgen-macro/0.2.74 \
-    crate://crates.io/wasm-bindgen-shared/0.2.74 \
-    crate://crates.io/wasm-bindgen/0.2.74 \
-    crate://crates.io/web-sys/0.3.51 \
+    crate://crates.io/wasm-bindgen-backend/0.2.75 \
+    crate://crates.io/wasm-bindgen-futures/0.4.25 \
+    crate://crates.io/wasm-bindgen-macro-support/0.2.75 \
+    crate://crates.io/wasm-bindgen-macro/0.2.75 \
+    crate://crates.io/wasm-bindgen-shared/0.2.75 \
+    crate://crates.io/wasm-bindgen/0.2.75 \
+    crate://crates.io/web-sys/0.3.52 \
     crate://crates.io/winapi-i686-pc-windows-gnu/0.4.0 \
     crate://crates.io/winapi-util/0.1.5 \
     crate://crates.io/winapi-x86_64-pc-windows-gnu/0.4.0 \
