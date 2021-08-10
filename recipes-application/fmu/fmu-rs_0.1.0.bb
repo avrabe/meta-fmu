@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.1.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "0eef6b54373052eebcf260310c3159882d980bff"
+SRCREV = "26fa208d3e0cd775279b244807e3975fdb08aa83"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV_append = ".AUTOINC+0eef6b5437"
+PV_append = ".AUTOINC+26fa208d3e"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -37,6 +37,7 @@ SRC_URI += " \
     crate://crates.io/core-foundation-sys/0.8.2 \
     crate://crates.io/core-foundation/0.9.1 \
     crate://crates.io/cpufeatures/0.1.5 \
+    crate://crates.io/crypto-mac/0.11.1 \
     crate://crates.io/digest/0.9.0 \
     crate://crates.io/dlv-list/0.2.3 \
     crate://crates.io/either/1.6.1 \
@@ -69,6 +70,7 @@ SRC_URI += " \
     crate://crates.io/heck/0.3.3 \
     crate://crates.io/hermit-abi/0.1.19 \
     crate://crates.io/hex/0.4.3 \
+    crate://crates.io/hmac/0.11.0 \
     crate://crates.io/http-body/0.4.3 \
     crate://crates.io/http/0.2.4 \
     crate://crates.io/httparse/1.4.1 \
@@ -84,6 +86,7 @@ SRC_URI += " \
     crate://crates.io/js-sys/0.3.52 \
     crate://crates.io/lazy_static/1.4.0 \
     crate://crates.io/libc/0.2.98 \
+    crate://crates.io/libsystemd/0.3.1 \
     crate://crates.io/lock_api/0.4.4 \
     crate://crates.io/log/0.4.14 \
     crate://crates.io/matchers/0.0.1 \
@@ -157,6 +160,7 @@ SRC_URI += " \
     crate://crates.io/strsim/0.10.0 \
     crate://crates.io/strum/0.21.0 \
     crate://crates.io/strum_macros/0.21.1 \
+    crate://crates.io/subtle/2.4.1 \
     crate://crates.io/syn/1.0.74 \
     crate://crates.io/system-deps/3.2.0 \
     crate://crates.io/tempfile/3.2.0 \
@@ -187,6 +191,7 @@ SRC_URI += " \
     crate://crates.io/unicode-width/0.1.8 \
     crate://crates.io/unicode-xid/0.2.2 \
     crate://crates.io/url/2.2.2 \
+    crate://crates.io/uuid/0.8.2 \
     crate://crates.io/vcpkg/0.2.15 \
     crate://crates.io/vec_map/0.8.2 \
     crate://crates.io/version-compare/0.0.11 \
