@@ -57,4 +57,4 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
          name: container
-         path: build/tmp/deploy/images/qemux86-64/
+         path: build/tmp/deploy/images/qemuarm64/
