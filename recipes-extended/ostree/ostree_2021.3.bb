@@ -40,7 +40,7 @@ PACKAGECONFIG ??= " \
     ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'systemd libmount', '', d)} \
     glib \
     gpgme \
-    soup \
+    curl \
 "
 
 # We include soup because ostree can't (currently) be built without
