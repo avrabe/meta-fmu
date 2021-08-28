@@ -7,13 +7,16 @@ IMAGE_FEATURES = ""
 IMAGE_LINGUAS = ""
 NO_RECOMMENDATIONS = "1"
 IMAGE_INSTALL = " \
- base-files \
- base-passwd \
  fmu-rs \
 "
+SYSTEMD_CONFIG = "${THISDIR}/files/container-fmu.service"
+
 # Workaround /var/volatile for now
 ROOTFS_POSTPROCESS_COMMAND += "rootfs_fixup_var_volatile ; "
 rootfs_fixup_var_volatile () {
- install -m 1777 -d ${IMAGE_ROOTFS}/${localstatedir}/volatile/tmp
- install -m 755 -d ${IMAGE_ROOTFS}/${localstatedir}/volatile/log
+    bbnote "Copy  systemd service config ${SYSTEMD_CONFIG} at top of ${IMAGE_ROOTFS}/"
+    cp ${SYSTEMD_CONFIG} "${IMAGE_ROOTFS}/systemd.service"
+
+    install -m 1777 -d ${IMAGE_ROOTFS}/${localstatedir}/volatile/tmp
+    install -m 755 -d ${IMAGE_ROOTFS}/${localstatedir}/volatile/log
 }
