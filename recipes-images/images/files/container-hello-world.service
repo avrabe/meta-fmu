@@ -1,0 +1,10 @@
+[Unit]
+Description=hello world
+After=network.target
+
+[Service]
+RootDirectory=/apps/hello-world/
+ExecStart=/usr/bin/rust-hello-world
+
+[Install]
+WantedBy=multi-user.target
