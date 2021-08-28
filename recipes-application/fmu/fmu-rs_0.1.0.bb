@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.1.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "21fd97c09d4f94d1f6441d7355c076debc028f71"
+SRCREV = "c9617bb03720bde9aac95a12e387e4643bca6f28"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV_append = ".AUTOINC+21fd97c09d"
+PV_append = ".AUTOINC+c9617bb037"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -57,10 +57,10 @@ SRC_URI += " \
     crate://crates.io/generic-array/0.14.4 \
     crate://crates.io/getrandom/0.2.3 \
     crate://crates.io/gio-sys/0.14.0 \
-    crate://crates.io/gio/0.14.0 \
+    crate://crates.io/gio/0.14.3 \
     crate://crates.io/glib-macros/0.14.1 \
     crate://crates.io/glib-sys/0.14.0 \
-    crate://crates.io/glib/0.14.2 \
+    crate://crates.io/glib/0.14.4 \
     crate://crates.io/gobject-sys/0.14.0 \
     crate://crates.io/h2/0.3.3 \
     crate://crates.io/hashbrown/0.11.2 \
@@ -83,7 +83,7 @@ SRC_URI += " \
     crate://crates.io/itoa/0.4.7 \
     crate://crates.io/js-sys/0.3.52 \
     crate://crates.io/lazy_static/1.4.0 \
-    crate://crates.io/libc/0.2.99 \
+    crate://crates.io/libc/0.2.101 \
     crate://crates.io/lock_api/0.4.4 \
     crate://crates.io/log/0.4.14 \
     crate://crates.io/matchers/0.0.1 \
@@ -109,7 +109,7 @@ SRC_URI += " \
     crate://crates.io/ordered-multimap/0.3.1 \
     crate://crates.io/os_str_bytes/2.4.0 \
     crate://crates.io/ostree-sys/0.8.2 \
-    crate://crates.io/ostree/0.12.2 \
+    crate://crates.io/ostree/0.12.3 \
     crate://crates.io/parking_lot/0.11.1 \
     crate://crates.io/parking_lot_core/0.8.3 \
     crate://crates.io/percent-encoding/2.1.0 \
@@ -143,8 +143,8 @@ SRC_URI += " \
     crate://crates.io/scopeguard/1.1.0 \
     crate://crates.io/security-framework-sys/2.3.0 \
     crate://crates.io/security-framework/2.3.1 \
-    crate://crates.io/serde/1.0.127 \
-    crate://crates.io/serde_derive/1.0.127 \
+    crate://crates.io/serde/1.0.129 \
+    crate://crates.io/serde_derive/1.0.129 \
     crate://crates.io/serde_json/1.0.66 \
     crate://crates.io/serde_urlencoded/0.7.0 \
     crate://crates.io/sha-1/0.9.7 \
@@ -170,14 +170,14 @@ SRC_URI += " \
     crate://crates.io/tokio-macros/1.3.0 \
     crate://crates.io/tokio-native-tls/0.3.0 \
     crate://crates.io/tokio-util/0.6.7 \
-    crate://crates.io/tokio/1.9.0 \
+    crate://crates.io/tokio/1.10.1 \
     crate://crates.io/toml/0.5.8 \
     crate://crates.io/tower-service/0.3.1 \
     crate://crates.io/tracing-attributes/0.1.15 \
     crate://crates.io/tracing-core/0.1.18 \
     crate://crates.io/tracing-log/0.1.2 \
     crate://crates.io/tracing-serde/0.1.2 \
-    crate://crates.io/tracing-subscriber/0.2.19 \
+    crate://crates.io/tracing-subscriber/0.2.20 \
     crate://crates.io/tracing/0.1.26 \
     crate://crates.io/try-lock/0.2.3 \
     crate://crates.io/typenum/1.13.0 \
