@@ -11,7 +11,7 @@ The kas tool and the needed minimal packages for building with bitbake are neede
 sudo apt-get update
 sudo apt-get install -y python3-pip
 sudo pip3 install kas
-sudo apt-get install -y gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat libsdl1.2-dev xterm
+sudo apt-get install -y gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat libsdl1.2-dev xterm zstd
 ```
 
 ## Building

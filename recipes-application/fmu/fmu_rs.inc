@@ -1,1 +1,1 @@
-DEPENDS_append = " ostree "
+DEPENDS:append = " ostree "
