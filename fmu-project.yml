@@ -28,8 +28,6 @@ repos:
     refspec: master 
     layers:
       meta-oe:
-      meta-python:
-      meta-networking:
 local_conf_header:
   meta-custom: |
     IMAGE_FSTYPES = "container"

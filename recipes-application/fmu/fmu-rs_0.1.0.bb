@@ -11,7 +11,7 @@ SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main
 SRCREV = "7a54e6471e2b640659a9f249003bc0fd30803daf"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV_append = ".AUTOINC+7a54e6471e"
+PV:append = ".AUTOINC+7a54e6471e"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
