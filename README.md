@@ -1,4 +1,5 @@
 # meta-fmu
+
 [![CI](https://github.com/avrabe/meta-fmu/actions/workflows/yocto.yml/badge.svg)](https://github.com/avrabe/meta-fmu/actions/workflows/yocto.yml)
 
 meta-fmu provides a bitbake layer for the fmu_rs application.
@@ -15,12 +16,14 @@ sudo apt-get install -y gawk wget git-core diffstat unzip texinfo gcc-multilib b
 ```
 
 ## Building
+
 To build the updater as container you can build it with:
 
 ```bash
 kas build fmu-project.yml
 ```
-To build the example 
+
+To build the example
 
 ```bash
 KAS_TARGET=hello-world kas build fmu-project.yml
