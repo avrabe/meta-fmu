@@ -1,1 +1,1 @@
-DEPENDS:append = " ostree openssl "
+DEPENDS:append = " ostree openssl pkgconfig-native "
