@@ -1,1 +1,1 @@
-DEPENDS:append = " ostree "
+DEPENDS:append = " ostree openssl "
