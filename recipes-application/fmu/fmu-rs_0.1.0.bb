@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.1.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "7a54e6471e2b640659a9f249003bc0fd30803daf"
+SRCREV = "1f1d37ef15f01003b1f2de75d3733cb12d1661aa"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV:append = ".AUTOINC+7a54e6471e"
+PV:append = ".AUTOINC+1f1d37ef15"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -83,7 +83,7 @@ SRC_URI += " \
     crate://crates.io/itoa/0.4.7 \
     crate://crates.io/js-sys/0.3.52 \
     crate://crates.io/lazy_static/1.4.0 \
-    crate://crates.io/libc/0.2.101 \
+    crate://crates.io/libc/0.2.104 \
     crate://crates.io/lock_api/0.4.4 \
     crate://crates.io/log/0.4.14 \
     crate://crates.io/matchers/0.0.1 \
@@ -108,8 +108,8 @@ SRC_URI += " \
     crate://crates.io/openssl/0.10.35 \
     crate://crates.io/ordered-multimap/0.3.1 \
     crate://crates.io/os_str_bytes/2.4.0 \
-    crate://crates.io/ostree-sys/0.8.2 \
-    crate://crates.io/ostree/0.12.3 \
+    crate://crates.io/ostree-sys/0.9.1 \
+    crate://crates.io/ostree/0.13.3 \
     crate://crates.io/parking_lot/0.11.1 \
     crate://crates.io/parking_lot_core/0.8.3 \
     crate://crates.io/percent-encoding/2.1.0 \
@@ -143,9 +143,9 @@ SRC_URI += " \
     crate://crates.io/scopeguard/1.1.0 \
     crate://crates.io/security-framework-sys/2.3.0 \
     crate://crates.io/security-framework/2.3.1 \
-    crate://crates.io/serde/1.0.129 \
-    crate://crates.io/serde_derive/1.0.129 \
-    crate://crates.io/serde_json/1.0.66 \
+    crate://crates.io/serde/1.0.130 \
+    crate://crates.io/serde_derive/1.0.130 \
+    crate://crates.io/serde_json/1.0.68 \
     crate://crates.io/serde_urlencoded/0.7.0 \
     crate://crates.io/sha-1/0.9.7 \
     crate://crates.io/sha2/0.9.5 \
@@ -170,15 +170,15 @@ SRC_URI += " \
     crate://crates.io/tokio-macros/1.3.0 \
     crate://crates.io/tokio-native-tls/0.3.0 \
     crate://crates.io/tokio-util/0.6.7 \
-    crate://crates.io/tokio/1.10.1 \
+    crate://crates.io/tokio/1.12.0 \
     crate://crates.io/toml/0.5.8 \
     crate://crates.io/tower-service/0.3.1 \
-    crate://crates.io/tracing-attributes/0.1.15 \
-    crate://crates.io/tracing-core/0.1.18 \
+    crate://crates.io/tracing-attributes/0.1.18 \
+    crate://crates.io/tracing-core/0.1.21 \
     crate://crates.io/tracing-log/0.1.2 \
     crate://crates.io/tracing-serde/0.1.2 \
-    crate://crates.io/tracing-subscriber/0.2.20 \
-    crate://crates.io/tracing/0.1.26 \
+    crate://crates.io/tracing-subscriber/0.2.25 \
+    crate://crates.io/tracing/0.1.29 \
     crate://crates.io/try-lock/0.2.3 \
     crate://crates.io/typenum/1.13.0 \
     crate://crates.io/unicode-bidi/0.3.5 \
