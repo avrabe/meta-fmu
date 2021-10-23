@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.1.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "1f1d37ef15f01003b1f2de75d3733cb12d1661aa"
+SRCREV = "1d67a84bd2947465e5a0d392f0f196500eefbed3"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV:append = ".AUTOINC+1f1d37ef15"
+PV:append = ".AUTOINC+1d67a84bd2"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -31,7 +31,6 @@ SRC_URI += " \
     crate://crates.io/cfg-expr/0.8.1 \
     crate://crates.io/cfg-if/0.1.10 \
     crate://crates.io/cfg-if/1.0.0 \
-    crate://crates.io/chrono/0.4.19 \
     crate://crates.io/clap/3.0.0-beta.2 \
     crate://crates.io/clap_derive/3.0.0-beta.2 \
     crate://crates.io/core-foundation-sys/0.8.2 \
@@ -86,7 +85,6 @@ SRC_URI += " \
     crate://crates.io/libc/0.2.104 \
     crate://crates.io/lock_api/0.4.4 \
     crate://crates.io/log/0.4.14 \
-    crate://crates.io/matchers/0.0.1 \
     crate://crates.io/matches/0.1.8 \
     crate://crates.io/md-5/0.9.1 \
     crate://crates.io/memchr/2.4.0 \
@@ -97,8 +95,6 @@ SRC_URI += " \
     crate://crates.io/native-tls/0.2.7 \
     crate://crates.io/nix/0.22.0 \
     crate://crates.io/ntapi/0.3.6 \
-    crate://crates.io/num-integer/0.1.44 \
-    crate://crates.io/num-traits/0.2.14 \
     crate://crates.io/num_cpus/1.13.0 \
     crate://crates.io/once_cell/1.8.0 \
     crate://crates.io/opaque-debug/0.3.0 \
@@ -130,9 +126,6 @@ SRC_URI += " \
     crate://crates.io/rand_core/0.6.3 \
     crate://crates.io/rand_hc/0.3.1 \
     crate://crates.io/redox_syscall/0.2.10 \
-    crate://crates.io/regex-automata/0.1.10 \
-    crate://crates.io/regex-syntax/0.6.25 \
-    crate://crates.io/regex/1.5.4 \
     crate://crates.io/remove_dir_all/0.5.3 \
     crate://crates.io/reqwest/0.11.4 \
     crate://crates.io/rust-ini/0.17.0 \
@@ -176,8 +169,7 @@ SRC_URI += " \
     crate://crates.io/tracing-attributes/0.1.18 \
     crate://crates.io/tracing-core/0.1.21 \
     crate://crates.io/tracing-log/0.1.2 \
-    crate://crates.io/tracing-serde/0.1.2 \
-    crate://crates.io/tracing-subscriber/0.2.25 \
+    crate://crates.io/tracing-subscriber/0.3.0 \
     crate://crates.io/tracing/0.1.29 \
     crate://crates.io/try-lock/0.2.3 \
     crate://crates.io/typenum/1.13.0 \
