@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.1.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "1d67a84bd2947465e5a0d392f0f196500eefbed3"
+SRCREV = "278aaae8ffc712dc3d66c2ea29bfc9b11a233b51"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV:append = ".AUTOINC+1d67a84bd2"
+PV:append = ".AUTOINC+278aaae8ff"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -31,8 +31,8 @@ SRC_URI += " \
     crate://crates.io/cfg-expr/0.8.1 \
     crate://crates.io/cfg-if/0.1.10 \
     crate://crates.io/cfg-if/1.0.0 \
-    crate://crates.io/clap/3.0.0-beta.2 \
-    crate://crates.io/clap_derive/3.0.0-beta.2 \
+    crate://crates.io/clap/3.0.0-beta.5 \
+    crate://crates.io/clap_derive/3.0.0-beta.5 \
     crate://crates.io/core-foundation-sys/0.8.2 \
     crate://crates.io/core-foundation/0.9.1 \
     crate://crates.io/cpufeatures/0.1.5 \
@@ -103,7 +103,7 @@ SRC_URI += " \
     crate://crates.io/openssl-sys/0.9.65 \
     crate://crates.io/openssl/0.10.35 \
     crate://crates.io/ordered-multimap/0.3.1 \
-    crate://crates.io/os_str_bytes/2.4.0 \
+    crate://crates.io/os_str_bytes/4.2.0 \
     crate://crates.io/ostree-sys/0.9.1 \
     crate://crates.io/ostree/0.13.3 \
     crate://crates.io/parking_lot/0.11.1 \
@@ -154,7 +154,7 @@ SRC_URI += " \
     crate://crates.io/system-deps/3.2.0 \
     crate://crates.io/tempfile/3.2.0 \
     crate://crates.io/termcolor/1.1.2 \
-    crate://crates.io/textwrap/0.12.1 \
+    crate://crates.io/textwrap/0.14.2 \
     crate://crates.io/thiserror-impl/1.0.26 \
     crate://crates.io/thiserror/1.0.26 \
     crate://crates.io/thread_local/1.1.3 \
@@ -173,6 +173,7 @@ SRC_URI += " \
     crate://crates.io/tracing/0.1.29 \
     crate://crates.io/try-lock/0.2.3 \
     crate://crates.io/typenum/1.13.0 \
+    crate://crates.io/unicase/2.6.0 \
     crate://crates.io/unicode-bidi/0.3.5 \
     crate://crates.io/unicode-normalization/0.1.19 \
     crate://crates.io/unicode-segmentation/1.8.0 \
@@ -180,7 +181,6 @@ SRC_URI += " \
     crate://crates.io/unicode-xid/0.2.2 \
     crate://crates.io/url/2.2.2 \
     crate://crates.io/vcpkg/0.2.15 \
-    crate://crates.io/vec_map/0.8.2 \
     crate://crates.io/version-compare/0.0.11 \
     crate://crates.io/version_check/0.9.3 \
     crate://crates.io/want/0.3.0 \
