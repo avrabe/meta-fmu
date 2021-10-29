@@ -1,0 +1,11 @@
+header:
+  version: 8
+local_conf_header:
+  buildoptimize: |
+    SSTATE_MIRRORS ?= "file://.* file:///data/yocto/sstate/PATH;downloadfilename=PATH"
+    SOURCE_MIRROR_URL ?= "file:///data/yocto/downloads/"
+    CCACHE_TOP_DIR = "/data/yocto/ccache"
+    INHERIT += " ccache "
+    BB_NUMBER_THREADS ?= "${@oe.utils.cpu_count()*3}"
+    PARALLEL_MAKE ?= "-j ${@oe.utils.cpu_count()*3}"
+    
