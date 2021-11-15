@@ -1,6 +1,8 @@
 [Service]
 Type=simple
 RootDirectory=/apps/fmu
-BindPaths=/apps /etc /run/dbus/system_bus_socket
+BindPaths=/apps /etc /run/dbus/system_bus_socket /var/tmp /proc
 ExecStart=/usr/bin/fmu_rs -c /config.cfg
 
+[Install]
+WantedBy=multi-user.target
