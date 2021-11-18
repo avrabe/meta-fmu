@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.1.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "bef840b1474964dbc217418dda357de3d5b5bd28"
+SRCREV = "ba9cc1cc232d28c0d09603dc46a44bf2d1f58736"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV:append = ".AUTOINC+bef840b147"
+PV:append = ".AUTOINC+ba9cc1cc23"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -138,7 +138,7 @@ SRC_URI += " \
     crate://crates.io/security-framework/2.3.1 \
     crate://crates.io/serde/1.0.130 \
     crate://crates.io/serde_derive/1.0.130 \
-    crate://crates.io/serde_json/1.0.70 \
+    crate://crates.io/serde_json/1.0.71 \
     crate://crates.io/serde_urlencoded/0.7.0 \
     crate://crates.io/sha-1/0.9.7 \
     crate://crates.io/sha2/0.9.5 \
@@ -160,10 +160,10 @@ SRC_URI += " \
     crate://crates.io/thread_local/1.1.3 \
     crate://crates.io/tinyvec/1.3.1 \
     crate://crates.io/tinyvec_macros/0.1.0 \
-    crate://crates.io/tokio-macros/1.3.0 \
+    crate://crates.io/tokio-macros/1.6.0 \
     crate://crates.io/tokio-native-tls/0.3.0 \
     crate://crates.io/tokio-util/0.6.7 \
-    crate://crates.io/tokio/1.13.0 \
+    crate://crates.io/tokio/1.14.0 \
     crate://crates.io/toml/0.5.8 \
     crate://crates.io/tower-service/0.3.1 \
     crate://crates.io/tracing-attributes/0.1.18 \
