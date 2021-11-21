@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.1.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "ba9cc1cc232d28c0d09603dc46a44bf2d1f58736"
+SRCREV = "21953cbc8175f5ead49659472f07fa30252f73e1"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV:append = ".AUTOINC+ba9cc1cc23"
+PV:append = ".AUTOINC+21953cbc81"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -44,6 +44,7 @@ SRC_URI += " \
     crate://crates.io/foreign-types-shared/0.1.1 \
     crate://crates.io/foreign-types/0.3.2 \
     crate://crates.io/form_urlencoded/1.0.1 \
+    crate://crates.io/fuchsia-cprng/0.1.1 \
     crate://crates.io/futures-channel/0.3.16 \
     crate://crates.io/futures-core/0.3.16 \
     crate://crates.io/futures-executor/0.3.16 \
@@ -121,10 +122,14 @@ SRC_URI += " \
     crate://crates.io/proc-macro2/1.0.28 \
     crate://crates.io/quote/1.0.9 \
     crate://crates.io/radix64/0.6.2 \
+    crate://crates.io/rand/0.4.6 \
     crate://crates.io/rand/0.8.4 \
     crate://crates.io/rand_chacha/0.3.1 \
+    crate://crates.io/rand_core/0.3.1 \
+    crate://crates.io/rand_core/0.4.2 \
     crate://crates.io/rand_core/0.6.3 \
     crate://crates.io/rand_hc/0.3.1 \
+    crate://crates.io/rdrand/0.4.0 \
     crate://crates.io/redox_syscall/0.2.10 \
     crate://crates.io/remove_dir_all/0.5.3 \
     crate://crates.io/reqwest/0.11.4 \
@@ -152,6 +157,7 @@ SRC_URI += " \
     crate://crates.io/strum_macros/0.21.1 \
     crate://crates.io/syn/1.0.74 \
     crate://crates.io/system-deps/3.2.0 \
+    crate://crates.io/tempdir/0.3.7 \
     crate://crates.io/tempfile/3.2.0 \
     crate://crates.io/termcolor/1.1.2 \
     crate://crates.io/textwrap/0.14.2 \
