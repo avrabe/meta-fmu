@@ -5,7 +5,7 @@ Description="FMU OTA Client"
 Type=simple
 RootDirectory=/apps/fmu
 BindPaths=/apps /etc /run/dbus/system_bus_socket /var/tmp /proc
-ExecStart=/usr/bin/fmu_rs -c /config.cfg
+ExecStart=/usr/bin/fmu_rs -o -c /config.cfg
 Restart=always
 RestartSec=10s
 
