@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.1.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "fbec93e719d9cd1d4ae9440adbfb91663fc73f23"
+SRCREV = "9758d9e1a00e7da8d54b48c3a0ae7104c2cf5c0d"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV:append = ".AUTOINC+fbec93e719"
+PV:append = ".AUTOINC+9758d9e1a0"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -31,8 +31,9 @@ SRC_URI += " \
     crate://crates.io/cfg-expr/0.8.1 \
     crate://crates.io/cfg-if/0.1.10 \
     crate://crates.io/cfg-if/1.0.0 \
-    crate://crates.io/clap/3.1.6 \
-    crate://crates.io/clap_derive/3.1.4 \
+    crate://crates.io/clap/3.1.12 \
+    crate://crates.io/clap_derive/3.1.7 \
+    crate://crates.io/clap_lex/0.1.1 \
     crate://crates.io/core-foundation-sys/0.8.2 \
     crate://crates.io/core-foundation/0.9.1 \
     crate://crates.io/cpufeatures/0.1.5 \
@@ -83,7 +84,7 @@ SRC_URI += " \
     crate://crates.io/itoa/1.0.1 \
     crate://crates.io/js-sys/0.3.52 \
     crate://crates.io/lazy_static/1.4.0 \
-    crate://crates.io/libc/0.2.121 \
+    crate://crates.io/libc/0.2.124 \
     crate://crates.io/lock_api/0.4.6 \
     crate://crates.io/log/0.4.14 \
     crate://crates.io/matches/0.1.8 \
@@ -175,8 +176,8 @@ SRC_URI += " \
     crate://crates.io/tracing-attributes/0.1.20 \
     crate://crates.io/tracing-core/0.1.22 \
     crate://crates.io/tracing-log/0.1.2 \
-    crate://crates.io/tracing-subscriber/0.3.9 \
-    crate://crates.io/tracing/0.1.32 \
+    crate://crates.io/tracing-subscriber/0.3.11 \
+    crate://crates.io/tracing/0.1.34 \
     crate://crates.io/try-lock/0.2.3 \
     crate://crates.io/typenum/1.13.0 \
     crate://crates.io/unicode-bidi/0.3.5 \
