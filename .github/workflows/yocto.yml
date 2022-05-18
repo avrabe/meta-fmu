@@ -46,12 +46,10 @@ jobs:
         uses: actions/cache@v2
         with:
          path: build/sstate-cache
-         key: ${{ runner.os }}-sstate-${{ steps.get-date.outputs.date }}
-         restore-keys: ${{ runner.os }}-sstate-
         
       - name: Run the build
         run: |
-          kas build fmu-project.yml
+          kas build fmu-project.yml:actions_buildoptimize.yml
           
       - name: Archive the container
         uses: actions/upload-artifact@v1
