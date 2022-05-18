@@ -46,6 +46,7 @@ jobs:
         uses: actions/cache@v2
         with:
          path: build/sstate-cache
+         key: cache
         
       - name: Run the build
         run: |
