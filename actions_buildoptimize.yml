@@ -3,4 +3,4 @@ header:
 local_conf_header:
   buildoptimize: |
     BB_NUMBER_THREADS ?= "${@oe.utils.cpu_count()*2}"
-    PARALLEL_MAKE ?= "-j ${@oe.utils.cpu_count()*10}"
+    PARALLEL_MAKE ?= "-j ${@oe.utils.cpu_count()*2}"
