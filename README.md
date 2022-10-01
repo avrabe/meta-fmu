@@ -1,6 +1,6 @@
 # meta-fmu
 
-[![CI](https://github.com/avrabe/meta-fmu/actions/workflows/yocto.yml/badge.svg)](https://github.com/avrabe/meta-fmu/actions/workflows/yocto.yml)
+[![CI](https://github.com/avrabe/meta-fmu/actions/workflows/yocto.yml/badge.svg?branch=kirkstone)](https://github.com/avrabe/meta-fmu/actions/workflows/yocto.yml)
 
 meta-fmu provides a bitbake layer for the fmu_rs application.
 
