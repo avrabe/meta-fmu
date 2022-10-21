@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.2.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "8caaf7dc5c50f7d2dc1822b59a02731795a221de"
+SRCREV = "dccfbe9d15b7e07cca27ccc0e188a1f9061605c5"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV:append = ".AUTOINC+8caaf7dc5c"
+PV:append = ".AUTOINC+dccfbe9d15"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -145,7 +145,7 @@ SRC_URI += " \
     crate://crates.io/security-framework/2.3.1 \
     crate://crates.io/serde/1.0.145 \
     crate://crates.io/serde_derive/1.0.145 \
-    crate://crates.io/serde_json/1.0.86 \
+    crate://crates.io/serde_json/1.0.87 \
     crate://crates.io/serde_urlencoded/0.7.0 \
     crate://crates.io/sha-1/0.9.7 \
     crate://crates.io/sha2/0.9.5 \
