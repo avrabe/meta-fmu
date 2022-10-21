@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.2.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "dccfbe9d15b7e07cca27ccc0e188a1f9061605c5"
+SRCREV = "2ba7862b7f7108b6b8e51e075b6c0746ef8e88db"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV:append = ".AUTOINC+dccfbe9d15"
+PV:append = ".AUTOINC+2ba7862b7f"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -30,8 +30,8 @@ SRC_URI += " \
     crate://crates.io/cfg-expr/0.8.1 \
     crate://crates.io/cfg-if/0.1.10 \
     crate://crates.io/cfg-if/1.0.0 \
-    crate://crates.io/clap/4.0.15 \
-    crate://crates.io/clap_derive/4.0.13 \
+    crate://crates.io/clap/4.0.18 \
+    crate://crates.io/clap_derive/4.0.18 \
     crate://crates.io/clap_lex/0.3.0 \
     crate://crates.io/core-foundation-sys/0.8.2 \
     crate://crates.io/core-foundation/0.9.1 \
@@ -143,8 +143,8 @@ SRC_URI += " \
     crate://crates.io/scopeguard/1.1.0 \
     crate://crates.io/security-framework-sys/2.3.0 \
     crate://crates.io/security-framework/2.3.1 \
-    crate://crates.io/serde/1.0.145 \
-    crate://crates.io/serde_derive/1.0.145 \
+    crate://crates.io/serde/1.0.147 \
+    crate://crates.io/serde_derive/1.0.147 \
     crate://crates.io/serde_json/1.0.87 \
     crate://crates.io/serde_urlencoded/0.7.0 \
     crate://crates.io/sha-1/0.9.7 \
