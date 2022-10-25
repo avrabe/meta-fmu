@@ -31,7 +31,7 @@ repos:
 local_conf_header:
   meta-custom: |
     IMAGE_FSTYPES = "container"
-    INHERIT += "rm_work_and_downloads"
+    INHERIT += "rm_work_and_downloads create-spdx"
   buildoptimize: |
     BB_HASHSERVE_UPSTREAM = "typhoon.yocto.io:8687"
     SSTATE_MIRRORS ?= "file://.* http://sstate.yoctoproject.org/3.5/PATH;downloadfilename=PATH"
