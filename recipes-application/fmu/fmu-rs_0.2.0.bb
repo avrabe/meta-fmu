@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.2.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "ef1f049423b751d8e2d14554a832dd12ee3ef263"
+SRCREV = "0deedea0b49bfa50bba08ca5e0b93e0dda877a9c"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV:append = ".AUTOINC+ef1f049423"
+PV:append = ".AUTOINC+0deedea0b4"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -27,7 +27,7 @@ SRC_URI += " \
     crate://crates.io/bumpalo/3.7.0 \
     crate://crates.io/bytes/1.0.1 \
     crate://crates.io/cc/1.0.69 \
-    crate://crates.io/cfg-expr/0.8.1 \
+    crate://crates.io/cfg-expr/0.11.0 \
     crate://crates.io/cfg-if/0.1.10 \
     crate://crates.io/cfg-if/1.0.0 \
     crate://crates.io/clap/4.0.18 \
@@ -38,7 +38,6 @@ SRC_URI += " \
     crate://crates.io/cpufeatures/0.1.5 \
     crate://crates.io/digest/0.9.0 \
     crate://crates.io/dlv-list/0.3.0 \
-    crate://crates.io/either/1.6.1 \
     crate://crates.io/encoding_rs/0.8.28 \
     crate://crates.io/fnv/1.0.7 \
     crate://crates.io/foreign-types-shared/0.1.1 \
@@ -56,12 +55,12 @@ SRC_URI += " \
     crate://crates.io/futures/0.3.16 \
     crate://crates.io/generic-array/0.14.4 \
     crate://crates.io/getrandom/0.2.3 \
-    crate://crates.io/gio-sys/0.14.0 \
-    crate://crates.io/gio/0.14.3 \
-    crate://crates.io/glib-macros/0.14.1 \
-    crate://crates.io/glib-sys/0.14.0 \
-    crate://crates.io/glib/0.14.4 \
-    crate://crates.io/gobject-sys/0.14.0 \
+    crate://crates.io/gio-sys/0.15.10 \
+    crate://crates.io/gio/0.15.12 \
+    crate://crates.io/glib-macros/0.15.11 \
+    crate://crates.io/glib-sys/0.15.10 \
+    crate://crates.io/glib/0.15.12 \
+    crate://crates.io/gobject-sys/0.15.10 \
     crate://crates.io/h2/0.3.13 \
     crate://crates.io/hashbrown/0.11.2 \
     crate://crates.io/hawkbit/0.6.0 \
@@ -78,7 +77,6 @@ SRC_URI += " \
     crate://crates.io/idna/0.2.3 \
     crate://crates.io/indexmap/1.7.0 \
     crate://crates.io/ipnet/2.3.1 \
-    crate://crates.io/itertools/0.10.1 \
     crate://crates.io/itoa/0.4.7 \
     crate://crates.io/itoa/1.0.1 \
     crate://crates.io/js-sys/0.3.52 \
@@ -106,8 +104,8 @@ SRC_URI += " \
     crate://crates.io/openssl/0.10.35 \
     crate://crates.io/ordered-multimap/0.4.2 \
     crate://crates.io/os_str_bytes/6.0.0 \
-    crate://crates.io/ostree-sys/0.10.0 \
-    crate://crates.io/ostree/0.15.0 \
+    crate://crates.io/ostree-sys/0.11.0 \
+    crate://crates.io/ostree/0.16.0 \
     crate://crates.io/overload/0.1.1 \
     crate://crates.io/parking_lot/0.12.0 \
     crate://crates.io/parking_lot_core/0.9.1 \
@@ -158,7 +156,7 @@ SRC_URI += " \
     crate://crates.io/strum/0.21.0 \
     crate://crates.io/strum_macros/0.21.1 \
     crate://crates.io/syn/1.0.102 \
-    crate://crates.io/system-deps/3.2.0 \
+    crate://crates.io/system-deps/6.0.3 \
     crate://crates.io/tempdir/0.3.7 \
     crate://crates.io/tempfile/3.2.0 \
     crate://crates.io/termcolor/1.1.2 \
@@ -187,7 +185,7 @@ SRC_URI += " \
     crate://crates.io/url/2.2.2 \
     crate://crates.io/valuable/0.1.0 \
     crate://crates.io/vcpkg/0.2.15 \
-    crate://crates.io/version-compare/0.0.11 \
+    crate://crates.io/version-compare/0.1.0 \
     crate://crates.io/version_check/0.9.3 \
     crate://crates.io/want/0.3.0 \
     crate://crates.io/wasi/0.10.2+wasi-snapshot-preview1 \
