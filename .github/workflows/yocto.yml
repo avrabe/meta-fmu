@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ langdale ]
   pull_request:
-    branches: [ main ]
+    branches: [ langdale ]
     
   schedule:
     - cron: "1 1 * * 1,3,5"
