@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.2.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "9a6368176a5dad76fcf585a42d27270b5da8772e"
+SRCREV = "1c319148e2789d732300d93c17af02d77cc535b2"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV:append = ".AUTOINC+9a6368176a"
+PV:append = ".AUTOINC+1c319148e2"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -23,7 +23,7 @@ SRC_URI += " \
     crate://crates.io/base64/0.13.0 \
     crate://crates.io/bitflags/1.2.1 \
     crate://crates.io/block-buffer/0.9.0 \
-    crate://crates.io/bumpalo/3.7.0 \
+    crate://crates.io/bumpalo/3.12.0 \
     crate://crates.io/bytes/1.0.1 \
     crate://crates.io/cc/1.0.69 \
     crate://crates.io/cfg-expr/0.11.0 \
@@ -94,11 +94,9 @@ SRC_URI += " \
     crate://crates.io/memchr/2.4.0 \
     crate://crates.io/memoffset/0.6.4 \
     crate://crates.io/mime/0.3.16 \
-    crate://crates.io/mio/0.8.2 \
-    crate://crates.io/miow/0.3.7 \
+    crate://crates.io/mio/0.8.5 \
     crate://crates.io/native-tls/0.2.7 \
     crate://crates.io/nix/0.25.1 \
-    crate://crates.io/ntapi/0.3.6 \
     crate://crates.io/nu-ansi-term/0.46.0 \
     crate://crates.io/num_cpus/1.13.0 \
     crate://crates.io/once_cell/1.13.0 \
@@ -174,7 +172,7 @@ SRC_URI += " \
     crate://crates.io/tokio-macros/1.7.0 \
     crate://crates.io/tokio-native-tls/0.3.0 \
     crate://crates.io/tokio-util/0.7.2 \
-    crate://crates.io/tokio/1.20.3 \
+    crate://crates.io/tokio/1.24.2 \
     crate://crates.io/toml/0.5.8 \
     crate://crates.io/tower-service/0.3.1 \
     crate://crates.io/tracing-attributes/0.1.23 \
