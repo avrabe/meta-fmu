@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.2.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "1c319148e2789d732300d93c17af02d77cc535b2"
+SRCREV = "0f6d47fddb8094f86b3cede3524230cd67b61370"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV:append = ".AUTOINC+1c319148e2"
+PV:append = ".AUTOINC+0f6d47fddb"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -29,7 +29,7 @@ SRC_URI += " \
     crate://crates.io/cfg-expr/0.11.0 \
     crate://crates.io/cfg-if/0.1.10 \
     crate://crates.io/cfg-if/1.0.0 \
-    crate://crates.io/clap/4.1.1 \
+    crate://crates.io/clap/4.1.4 \
     crate://crates.io/clap_derive/4.1.0 \
     crate://crates.io/clap_lex/0.3.0 \
     crate://crates.io/core-foundation-sys/0.8.2 \
@@ -85,7 +85,7 @@ SRC_URI += " \
     crate://crates.io/itoa/1.0.1 \
     crate://crates.io/js-sys/0.3.52 \
     crate://crates.io/lazy_static/1.4.0 \
-    crate://crates.io/libc/0.2.137 \
+    crate://crates.io/libc/0.2.139 \
     crate://crates.io/linux-raw-sys/0.1.4 \
     crate://crates.io/lock_api/0.4.6 \
     crate://crates.io/log/0.4.14 \
