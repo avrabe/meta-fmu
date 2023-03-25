@@ -8,10 +8,10 @@ inherit cargo
 # how to get fmu_rs could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/fmu_rs/0.2.0"
 SRC_URI += "git://github.com/avrabe/fmu-rs;protocol=https;nobranch=1;branch=main"
-SRCREV = "956cd739766ed92ccf08ab782c9a04e2681dc955"
+SRCREV = "47b8b0881b7bcebf0025bffd0a88de82a8fe1f1e"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV:append = ".AUTOINC+956cd73976"
+PV:append = ".AUTOINC+47b8b0881b"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -28,8 +28,8 @@ SRC_URI += " \
     crate://crates.io/cc/1.0.69 \
     crate://crates.io/cfg-expr/0.11.0 \
     crate://crates.io/cfg-if/1.0.0 \
-    crate://crates.io/clap/4.1.8 \
-    crate://crates.io/clap_derive/4.1.8 \
+    crate://crates.io/clap/4.1.13 \
+    crate://crates.io/clap_derive/4.1.12 \
     crate://crates.io/clap_lex/0.3.0 \
     crate://crates.io/core-foundation-sys/0.8.2 \
     crate://crates.io/core-foundation/0.9.1 \
@@ -84,7 +84,7 @@ SRC_URI += " \
     crate://crates.io/itoa/1.0.1 \
     crate://crates.io/js-sys/0.3.52 \
     crate://crates.io/lazy_static/1.4.0 \
-    crate://crates.io/libc/0.2.139 \
+    crate://crates.io/libc/0.2.140 \
     crate://crates.io/linux-raw-sys/0.1.4 \
     crate://crates.io/lock_api/0.4.6 \
     crate://crates.io/log/0.4.14 \
@@ -101,9 +101,10 @@ SRC_URI += " \
     crate://crates.io/once_cell/1.13.0 \
     crate://crates.io/opaque-debug/0.3.0 \
     crate://crates.io/openat/0.1.21 \
+    crate://crates.io/openssl-macros/0.1.0 \
     crate://crates.io/openssl-probe/0.1.4 \
-    crate://crates.io/openssl-sys/0.9.65 \
-    crate://crates.io/openssl/0.10.35 \
+    crate://crates.io/openssl-sys/0.9.83 \
+    crate://crates.io/openssl/0.10.48 \
     crate://crates.io/ordered-multimap/0.4.2 \
     crate://crates.io/os_str_bytes/6.0.0 \
     crate://crates.io/ostree-sys/0.12.0 \
@@ -121,8 +122,8 @@ SRC_URI += " \
     crate://crates.io/proc-macro-error/1.0.4 \
     crate://crates.io/proc-macro-hack/0.5.19 \
     crate://crates.io/proc-macro-nested/0.1.7 \
-    crate://crates.io/proc-macro2/1.0.46 \
-    crate://crates.io/quote/1.0.9 \
+    crate://crates.io/proc-macro2/1.0.53 \
+    crate://crates.io/quote/1.0.26 \
     crate://crates.io/rand/0.4.6 \
     crate://crates.io/rand/0.8.4 \
     crate://crates.io/rand_chacha/0.3.1 \
@@ -143,9 +144,9 @@ SRC_URI += " \
     crate://crates.io/scopeguard/1.1.0 \
     crate://crates.io/security-framework-sys/2.3.0 \
     crate://crates.io/security-framework/2.3.1 \
-    crate://crates.io/serde/1.0.154 \
-    crate://crates.io/serde_derive/1.0.154 \
-    crate://crates.io/serde_json/1.0.93 \
+    crate://crates.io/serde/1.0.158 \
+    crate://crates.io/serde_derive/1.0.158 \
+    crate://crates.io/serde_json/1.0.94 \
     crate://crates.io/serde_urlencoded/0.7.0 \
     crate://crates.io/sha-1/0.9.7 \
     crate://crates.io/sha2/0.9.5 \
@@ -159,6 +160,7 @@ SRC_URI += " \
     crate://crates.io/strum/0.21.0 \
     crate://crates.io/strum_macros/0.21.1 \
     crate://crates.io/syn/1.0.107 \
+    crate://crates.io/syn/2.0.8 \
     crate://crates.io/system-deps/6.0.3 \
     crate://crates.io/tempdir/0.3.7 \
     crate://crates.io/tempfile/3.2.0 \
