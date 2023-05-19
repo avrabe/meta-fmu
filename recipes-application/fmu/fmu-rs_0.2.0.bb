@@ -14,7 +14,7 @@ S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
 
 include ${BPN}-srcrev.inc
-PV:append = ".AUTOINC+{SRCPV}"
+PV:append = ".AUTOINC+${SRCPV}"
 DEPENDS:append = " ostree openssl pkgconfig-native "
 
 LIC_FILES_CHKSUM = " \
