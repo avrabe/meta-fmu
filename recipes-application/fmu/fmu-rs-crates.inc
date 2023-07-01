@@ -18,8 +18,8 @@ SRC_URI += " \
     crate://crates.io/cc/1.0.69 \
     crate://crates.io/cfg-expr/0.11.0 \
     crate://crates.io/cfg-if/1.0.0 \
-    crate://crates.io/clap/4.3.4 \
-    crate://crates.io/clap_builder/4.3.4 \
+    crate://crates.io/clap/4.3.5 \
+    crate://crates.io/clap_builder/4.3.5 \
     crate://crates.io/clap_derive/4.3.2 \
     crate://crates.io/clap_lex/0.5.0 \
     crate://crates.io/colorchoice/1.0.0 \
@@ -80,7 +80,7 @@ SRC_URI += " \
     crate://crates.io/itoa/1.0.1 \
     crate://crates.io/js-sys/0.3.52 \
     crate://crates.io/lazy_static/1.4.0 \
-    crate://crates.io/libc/0.2.146 \
+    crate://crates.io/libc/0.2.147 \
     crate://crates.io/linux-raw-sys/0.3.0 \
     crate://crates.io/lock_api/0.4.6 \
     crate://crates.io/log/0.4.14 \
@@ -97,10 +97,10 @@ SRC_URI += " \
     crate://crates.io/once_cell/1.17.1 \
     crate://crates.io/opaque-debug/0.3.0 \
     crate://crates.io/openat/0.1.21 \
-    crate://crates.io/openssl/0.10.48 \
+    crate://crates.io/openssl/0.10.55 \
     crate://crates.io/openssl-macros/0.1.0 \
     crate://crates.io/openssl-probe/0.1.4 \
-    crate://crates.io/openssl-sys/0.9.83 \
+    crate://crates.io/openssl-sys/0.9.90 \
     crate://crates.io/ordered-multimap/0.6.0 \
     crate://crates.io/ostree/0.18.0 \
     crate://crates.io/ostree-sys/0.13.0 \
@@ -245,8 +245,8 @@ SRC_URI[bytes-1.0.1.sha256sum] = "b700ce4376041dcd0a327fd0097c41095743c4c8af8887
 SRC_URI[cc-1.0.69.sha256sum] = "e70cc2f62c6ce1868963827bd677764c62d07c3d9a3e1fb1177ee1a9ab199eb2"
 SRC_URI[cfg-expr-0.11.0.sha256sum] = "b0357a6402b295ca3a86bc148e84df46c02e41f41fef186bda662557ef6328aa"
 SRC_URI[cfg-if-1.0.0.sha256sum] = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
-SRC_URI[clap-4.3.4.sha256sum] = "80672091db20273a15cf9fdd4e47ed43b5091ec9841bf4c6145c9dfbbcae09ed"
-SRC_URI[clap_builder-4.3.4.sha256sum] = "c1458a1df40e1e2afebb7ab60ce55c1fa8f431146205aa5f4887e0b111c27636"
+SRC_URI[clap-4.3.5.sha256sum] = "2686c4115cb0810d9a984776e197823d08ec94f176549a89a9efded477c456dc"
+SRC_URI[clap_builder-4.3.5.sha256sum] = "2e53afce1efce6ed1f633cf0e57612fe51db54a1ee4fd8f8503d078fe02d69ae"
 SRC_URI[clap_derive-4.3.2.sha256sum] = "b8cd2b2a819ad6eec39e8f1d6b53001af1e5469f8c177579cdaeb313115b825f"
 SRC_URI[clap_lex-0.5.0.sha256sum] = "2da6da31387c7e4ef160ffab6d5e7f00c42626fe39aea70a7b0f1773f7dd6c1b"
 SRC_URI[colorchoice-1.0.0.sha256sum] = "acbf1af155f9b9ef647e42cdc158db4b64a1b61f743629225fde6f3e0be2a7c7"
@@ -307,7 +307,7 @@ SRC_URI[itoa-0.4.7.sha256sum] = "dd25036021b0de88a0aff6b850051563c6516d0bf53f863
 SRC_URI[itoa-1.0.1.sha256sum] = "1aab8fc367588b89dcee83ab0fd66b72b50b72fa1904d7095045ace2b0c81c35"
 SRC_URI[js-sys-0.3.52.sha256sum] = "ce791b7ca6638aae45be056e068fc756d871eb3b3b10b8efa62d1c9cec616752"
 SRC_URI[lazy_static-1.4.0.sha256sum] = "e2abad23fbc42b3700f2f279844dc832adb2b2eb069b2df918f455c4e18cc646"
-SRC_URI[libc-0.2.146.sha256sum] = "f92be4933c13fd498862a9e02a3055f8a8d9c039ce33db97306fd5a6caa7f29b"
+SRC_URI[libc-0.2.147.sha256sum] = "b4668fb0ea861c1df094127ac5f1da3409a82116a4ba74fca2e58ef927159bb3"
 SRC_URI[linux-raw-sys-0.3.0.sha256sum] = "cd550e73688e6d578f0ac2119e32b797a327631a42f9433e59d02e139c8df60d"
 SRC_URI[lock_api-0.4.6.sha256sum] = "88943dd7ef4a2e5a4bfa2753aaab3013e34ce2533d1996fb18ef591e315e2b3b"
 SRC_URI[log-0.4.14.sha256sum] = "51b9bbe6c47d51fc3e1a9b945965946b4c44142ab8792c50835a980d362c2710"
@@ -324,10 +324,10 @@ SRC_URI[num_cpus-1.13.0.sha256sum] = "05499f3756671c15885fee9034446956fff3f243d6
 SRC_URI[once_cell-1.17.1.sha256sum] = "b7e5500299e16ebb147ae15a00a942af264cf3688f47923b8fc2cd5858f23ad3"
 SRC_URI[opaque-debug-0.3.0.sha256sum] = "624a8340c38c1b80fd549087862da4ba43e08858af025b236e509b6649fc13d5"
 SRC_URI[openat-0.1.21.sha256sum] = "95aa7c05907b3ebde2610d602f4ddd992145cc6a84493647c30396f30ba83abe"
-SRC_URI[openssl-0.10.48.sha256sum] = "518915b97df115dd36109bfa429a48b8f737bd05508cf9588977b599648926d2"
+SRC_URI[openssl-0.10.55.sha256sum] = "345df152bc43501c5eb9e4654ff05f794effb78d4efe3d53abc158baddc0703d"
 SRC_URI[openssl-macros-0.1.0.sha256sum] = "b501e44f11665960c7e7fcf062c7d96a14ade4aa98116c004b2e37b5be7d736c"
 SRC_URI[openssl-probe-0.1.4.sha256sum] = "28988d872ab76095a6e6ac88d99b54fd267702734fd7ffe610ca27f533ddb95a"
-SRC_URI[openssl-sys-0.9.83.sha256sum] = "666416d899cf077260dac8698d60a60b435a46d57e82acb1be3d0dad87284e5b"
+SRC_URI[openssl-sys-0.9.90.sha256sum] = "374533b0e45f3a7ced10fcaeccca020e66656bc03dac384f852e4e5a7a8104a6"
 SRC_URI[ordered-multimap-0.6.0.sha256sum] = "4ed8acf08e98e744e5384c8bc63ceb0364e68a6854187221c18df61c4797690e"
 SRC_URI[ostree-0.18.0.sha256sum] = "054f5bd13c1ac78c922aa05fbf4c55730d7a3fc6490b1b65335b00e880a63334"
 SRC_URI[ostree-sys-0.13.0.sha256sum] = "de67826255aa25d812bcd9b9f9dafb575b0b160adbe34d83d69c73c19d6b3e0c"
