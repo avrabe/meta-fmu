@@ -148,7 +148,7 @@ SRC_URI += " \
     crate://crates.io/security-framework-sys/2.3.0 \
     crate://crates.io/serde/1.0.167 \
     crate://crates.io/serde_derive/1.0.167 \
-    crate://crates.io/serde_json/1.0.100 \
+    crate://crates.io/serde_json/1.0.103 \
     crate://crates.io/serde_urlencoded/0.7.0 \
     crate://crates.io/sha-1/0.9.7 \
     crate://crates.io/sha2/0.9.5 \
@@ -382,7 +382,7 @@ SRC_URI[security-framework-2.3.1.sha256sum] = "23a2ac85147a3a11d77ecf1bc7166ec0b
 SRC_URI[security-framework-sys-2.3.0.sha256sum] = "7e4effb91b4b8b6fb7732e670b6cee160278ff8e6bf485c7805d9e319d76e284"
 SRC_URI[serde-1.0.167.sha256sum] = "7daf513456463b42aa1d94cff7e0c24d682b429f020b9afa4f5ba5c40a22b237"
 SRC_URI[serde_derive-1.0.167.sha256sum] = "b69b106b68bc8054f0e974e70d19984040f8a5cf9215ca82626ea4853f82c4b9"
-SRC_URI[serde_json-1.0.100.sha256sum] = "0f1e14e89be7aa4c4b78bdbdc9eb5bf8517829a600ae8eaa39a6e1d960b5185c"
+SRC_URI[serde_json-1.0.103.sha256sum] = "d03b412469450d4404fe8499a268edd7f8b79fecb074b0d812ad64ca21f4031b"
 SRC_URI[serde_urlencoded-0.7.0.sha256sum] = "edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9"
 SRC_URI[sha-1-0.9.7.sha256sum] = "1a0c8611594e2ab4ebbf06ec7cbbf0a99450b8570e96cbf5188b5d5f6ef18d81"
 SRC_URI[sha2-0.9.5.sha256sum] = "b362ae5752fd2137731f9fa25fd4d9058af34666ca1966fb969119cc35719f12"
