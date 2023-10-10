@@ -166,7 +166,7 @@ SRC_URI += " \
     crate://crates.io/tiny-keccak/2.0.2 \
     crate://crates.io/tinyvec/1.3.1 \
     crate://crates.io/tinyvec_macros/0.1.0 \
-    crate://crates.io/tokio/1.32.0 \
+    crate://crates.io/tokio/1.33.0 \
     crate://crates.io/tokio-macros/2.1.0 \
     crate://crates.io/tokio-native-tls/0.3.0 \
     crate://crates.io/tokio-util/0.7.2 \
@@ -384,7 +384,7 @@ SRC_URI[thread_local-1.1.4.sha256sum] = "5516c27b78311c50bf42c071425c560ac799b11
 SRC_URI[tiny-keccak-2.0.2.sha256sum] = "2c9d3793400a45f954c52e73d068316d76b6f4e36977e3fcebb13a2721e80237"
 SRC_URI[tinyvec-1.3.1.sha256sum] = "848a1e1181b9f6753b5e96a092749e29b11d19ede67dfbbd6c7dc7e0f49b5338"
 SRC_URI[tinyvec_macros-0.1.0.sha256sum] = "cda74da7e1a664f795bb1f8a87ec406fb89a02522cf6e50620d016add6dbbf5c"
-SRC_URI[tokio-1.32.0.sha256sum] = "17ed6077ed6cd6c74735e21f37eb16dc3935f96878b1fe961074089cc80893f9"
+SRC_URI[tokio-1.33.0.sha256sum] = "4f38200e3ef7995e5ef13baec2f432a6da0aa9ac495b2c0e8f3b7eec2c92d653"
 SRC_URI[tokio-macros-2.1.0.sha256sum] = "630bdcf245f78637c13ec01ffae6187cca34625e8c63150d424b59e55af2675e"
 SRC_URI[tokio-native-tls-0.3.0.sha256sum] = "f7d995660bd2b7f8c1568414c1126076c13fbb725c40112dc0120b78eb9b717b"
 SRC_URI[tokio-util-0.7.2.sha256sum] = "f988a1a1adc2fb21f9c12aa96441da33a1728193ae0b95d2be22dbd17fcb4e5c"
