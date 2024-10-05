@@ -53,7 +53,7 @@ jobs:
           kas build fmu-project.yml:actions_buildoptimize.yml
           
       - name: Archive the container
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
          name: container
          path: build/tmp/deploy/images/qemuarm64/
