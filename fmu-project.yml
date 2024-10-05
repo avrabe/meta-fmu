@@ -19,13 +19,13 @@ repos:
   # bblayers.conf:
   poky:
     url: "https://git.yoctoproject.org/git/poky"
-    refspec: master
+    branch: master
     layers:
       meta:
       meta-poky:
   meta-openembedded:
     url: "https://github.com/openembedded/meta-openembedded.git"
-    refspec: master 
+    branch: master 
     layers:
       meta-oe:
 local_conf_header:
